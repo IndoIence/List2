@@ -23,7 +23,7 @@ object Task3 {
     //books.foreach(book => generateShingles(book))
 
     // this for some reason gives a List(Vector(HashSet))) when i expect List(HashSet))
-    val minShingle = 3
+    val minShingle = 1
     val maxShingle = 14
     val shinglesInBooks = loadedBooks.map(book => (minShingle to maxShingle).map(generateShingles(book._3,_)))
     val booksWithShingles = books.zip(shinglesInBooks)
